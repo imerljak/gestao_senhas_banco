@@ -1,0 +1,15 @@
+<div class="columns is-mobile">
+  <div class="column">
+    <button class="button is-primary" [ngClass]="{'is-loading': isLoading}"
+      (click)="solicitarSenhaNormal()">Normal</button>
+  </div>
+  <div class="column">
+    <button class="button is-warning" [ngClass]="{'is-loading': isLoading}" (click)="solicitarSenhaPreferencial()">Preferencial</button>
+  </div>
+</div>
+<div class="columns" *ngIf="senhaAtual">
+  <div class="column is-full">
+    <p>Anote sua senha:</p>
+    <h6 class="has-text-weight-bold">{{senhaAtual}}</h6>
+  </div>
+</div>

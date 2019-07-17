@@ -1,0 +1,15 @@
+<section class="hero is-medium">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="subtitle">
+        Ultima senha chamada:
+      </h2>
+      <h1 class="title" *ngIf="senhaAtual; else aguarde">
+        {{ senhaAtual }}
+      </h1>
+      <ng-template #aguarde>
+        Por favor aguarde..
+      </ng-template>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,24 @@
+<section class="section">
+  <div class="level">
+    <div class="level-left"></div>
+    <div class="level-right"><a [routerLink]="['/public']" class="button is-info">Acesso Público</a></div>
+  </div>
+  <div class="columns">
+    <div class="column">
+      <div class="card">
+          <div class="card-content">
+              <button class="button is-primary" (click)="chamarProximaSenha()">Chamar proxima senha.</button>
+              <p>{{proximaSenha}}</p>
+          </div>
+      </div>
+    </div>
+    <div class="column">
+      <div class="card">
+        <div class="card-content">
+          <button class="button is-warning" (click)="reiniciarContagemDeSenhas()">Reiniciar Contagem de Senhas</button> 
+          <p>{{msgReiniciar}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

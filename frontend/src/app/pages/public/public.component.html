@@ -1,0 +1,37 @@
+<div class="section">
+  <div class="level">
+    <div class="level-left">
+    </div>
+    <div class="level-right">
+        <a class="button is-danger" [routerLink]="['/private']" target="_blank">Acesso restrito</a>
+    </div>
+  </div>
+  <div class="tile is-ancestor is-fullheight">
+    <div class="tile is-parent">
+      <div class="tile is-child card">
+        <header class="card-header">
+          <p class="card-header-title">Solicitar senha:</p>
+        </header>
+        <div class="card-content">
+          <app-solicitar-senha></app-solicitar-senha>
+        </div>
+      </div>
+    </div>
+    <div class="tile is-7 is-parent">
+      <div class="tile is-child card">
+        <div class="card-content">
+          <app-senha-atual></app-senha-atual>
+        </div>
+      </div>
+    </div>
+    <div class="tile is-parent">
+      <div class="tile is-child card">
+        <header class="card-header">
+          <p class="card-header-title">Senhas chamadas:</p>
+        </header>
+        <app-ultimas-senhas></app-ultimas-senhas>
+      </div>
+    </div>
+  </div>
+
+</div>
